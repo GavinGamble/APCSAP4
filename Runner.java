@@ -7,8 +7,13 @@ public class Runner
 {
   public static void main(String[] args) 
   {
-    PhraseSolver p = new PhraseSolver(); 
-    p.play();
+    Player p1 = new Player("Test Name");
+    System.out.println("P1 Name:" + p1.name);
+    
+    Player p2 = new Player(p1);
+    System.out.println("P1 Name:" + p1.name);
+  
+    System.out.println("P2 Name:" + p2.name);
   }
 
 } 

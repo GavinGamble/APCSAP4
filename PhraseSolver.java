@@ -7,6 +7,15 @@ import java.util.Scanner;
   
 public class PhraseSolver
 {
+  public PhraseSolver()
+  {
+    player1 = null;
+    player 2 = null; 
+    board = null; 
+    solved = false; 
+  }
+  board = new Board();
+  solved = false;
   /* your code here - attributes */
 
   /* your code here - constructor(s) */ 
