@@ -4,44 +4,37 @@
  *  The PhraseSolver class the PhraseSolverGame
  */
 import java.util.Scanner;
-  
-public class PhraseSolver
+
+public class Player
 {
-  public PhraseSolver()
-  {
-    player1 = null;
-    player 2 = null; 
-    board = null; 
-    solved = false; 
-  }
-  board = new Board();
-  solved = false;
-  /* your code here - attributes */
+ private String name = new String(); 
+ private double pointsBanked;
+ private double pointsEarned;
+ 
+ public String getName()
+ {
+    Scanner sc = new Scanner(System.in);
 
-  /* your code here - constructor(s) */ 
-
-  /* your code here - accessor(s) */
-  
-  /* your code here - mutator(s)  */
-
-  public void play()
-  {
-    boolean solved = false;
-    int currentPlayer = 1;
-
-    Scanner input = new Scanner(System.in);
-    
-    boolean correct = true;
-    while (!solved) 
+    System.out.println("Enter Player Name:"); 
+    String newName = sc.nextLine();
+    while (newName.length() > 10)
     {
-      
-      /* your code here - game logic */
-      
-      
-      /* your code here - determine how game ends */
-      solved = true; 
-    } 
-   
-  }
+      System.out.println("Entry too long, Enter Player Name:");
+      newName = sc.nextLine();
+    }
+    
+    name = newName;
+    return name;
+ }
+ 
+ public void setName(String x)
+ {
+   name = x;
+ }
   
-}
+ public double getPointsEarned()
+ {
+   return pointsEarned;
+ }
+  
+} 
