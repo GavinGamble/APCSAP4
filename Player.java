@@ -22,6 +22,16 @@ public class Player
     name = newName;
     points = 0;
   }
+  public playerTwo(String inputName)
+  {
+    System.out.println("Enter player name.");
+    Scanner sc = new Scanner(System.in);
+    String newName = sc.nextLine();
+    name = newName;
+    System.out.println("Hello and welcome to the game, " + name);
+    name = newName;
+    points = 0;
+  }
 public String getName()
  {
    return name;

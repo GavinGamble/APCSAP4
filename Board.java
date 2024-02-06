@@ -14,9 +14,15 @@ public class  Board
 
   public Board()
   {
+    Person Player = new Person();
+    //System.out.println(p.getName());
+    Person playerTwo = new Person();
+    //System.out.println(p.getName());
+    
     solvedPhrase = "";
     phrase = "";
     currentLetterValue = 0;
+    System.out.println("");
   }
 
   /* your code here - constructor(s) */ 
