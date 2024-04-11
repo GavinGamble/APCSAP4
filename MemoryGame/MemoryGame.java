@@ -40,13 +40,13 @@ public class MemoryGame {
                 }
             }
 
-            // Play one sequence, delaying half a second for the strings to show in the buttons
+            // Play sequence and delay it for half a second.
             String playerGuess = gameGUI.playSequence(randomSequence.toArray(new String[0]), 0.5);
 
             // Cleanup the guess
             playerGuess = playerGuess.replace(",", "").replace(" ", "");
 
-            // Determine if guess matches all elements of the random sequence
+            // Determine if guess matches generated one
             if (playerGuess.equals(String.join("", randomSequence))) {
                 score++;
                 gameGUI.matched();
@@ -54,7 +54,7 @@ public class MemoryGame {
                 gameGUI.tryAgain();
             }
 
-            // Ask if user wants to play another round of the game
+            // Ask if you want to play again
             playAgain = gameGUI.playAgain();
         }
 
@@ -63,7 +63,7 @@ public class MemoryGame {
         gameGUI.quit();
     }
 }
-
+//Just the Orignal Instructions
 // Create the "memory strings" - an array of single character strings to
     // show in the buttons, one element at a time. This is the sequence
     // the player will have to remember.
